@@ -6,6 +6,7 @@ It integrates with **ROS 2** and **micro-ROS** via a WebSocket bridge, supports 
 ---
 
 ## 📂 Project Structure
+```
 DOBI_UI/
 │── best.pt # YOLO model weights (Ultralytics YOLOv8)
 │── main.py # Streamlit UI entry point
@@ -28,7 +29,7 @@ DOBI_UI/
 │
 └── utils/
 └── config.py # Configuration parameters
-
+```
 
 ---
 
@@ -48,9 +49,8 @@ cd DOBBI_UI
 # 3️⃣ Make bridge script executable
 chmod +x run_bridge.sh
 
-
----
 ```
+
 ## ▶️ Running DOBI_UI
 In two separate terminals:
 
@@ -70,6 +70,7 @@ streamlit run main.py --server.port 8501 --server.address 0.0.0.0
 From any device on the same network:
 http://<raspberry_pi_ip>:8501
 Replace <raspberry_pi_ip> with the IP address of your Raspberry Pi.
+
 
 
 
